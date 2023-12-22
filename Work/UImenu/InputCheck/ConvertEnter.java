@@ -13,8 +13,8 @@ public class ConvertEnter {
 
     // Возращаем преобразованую в число команду или пустоту.
     public Integer convertEnter() {
-        Integer number = convertString();
         if (checkNumber()) {
+            Integer number = convertString();
             if (checkOption(number, size)) {
                 return number;
             }
@@ -23,7 +23,7 @@ public class ConvertEnter {
     }
 
     // Конвертируем строку в число.
-    public int convertString() {
+    public Integer convertString() {
         return Integer.parseInt(element);
     }
 
